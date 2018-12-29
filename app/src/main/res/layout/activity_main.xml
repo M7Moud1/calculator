@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.calculator.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            android:id="@+id/n"
+            android:layout_alignParentTop="true"
+
+            />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/equ"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/equal"
+            android:onClick="equal"
+            android:layout_below="@id/sub"
+
+
+            />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"
+            android:id="@+id/add"
+            android:layout_toLeftOf="@id/equal"
+            android:onClick="add"
+            android:layout_below="@id/sub"
+             />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sub"
+            android:onClick="sub"
+            android:layout_below="@id/n"
+            android:layout_marginTop="50dp"
+
+            />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/div"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/div"
+            android:layout_below="@id/equal"
+            android:onClick="div"
+             />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:background="@drawable/mul"
+
+            android:id="@+id/mult"
+            android:onClick="mul"
+            android:layout_toRightOf="@id/equal"
+            android:layout_below="@id/sub"
+             />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="C"
+            android:onClick="reset"
+            android:layout_below="@id/div"/>
+    </RelativeLayout>
+</ScrollView>
